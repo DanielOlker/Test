@@ -1,0 +1,118 @@
+.bw08 {
+  border-width: 0.1rem; 
+}
+
+.w-15 {
+  width: 15%;
+}
+
+.defaultcolor {
+  color: whitesmoke;
+}
+
+.pb10 {
+  padding-bottom: 25rem;
+}
+
+.colorshiftBlue {
+  color: defaultcolor;
+  transition: color .15s ease-in;
+}
+
+.colorshiftBlue:hover,
+.colorshiftBlue:focus {
+  color: lightblue;
+  transition: color .15s ease-in;
+}
+
+.defaultfont {
+  font-size: 15px;
+}
+
+.page {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.container {
+  overflow: hidden;
+  background-color: rgb(141, 189, 236);
+}
+ 
+.menu {
+  min-height: 10%;
+  max-height: 10%;
+  background-color: #B2D6FF;    
+}
+
+.sidebar {
+  float: left;
+  width:20%;
+  min-height: 30rem;
+  max-height: 30rem;
+  background-color: #F09A9D;   
+}
+
+.content {
+  padding-left: 150px;
+  float: left;
+  width:100%;
+  min-height: 38rem;
+  max-height: 38rem;
+  background-color: #F5CF8E;   
+}
+
+.footer {
+  min-height: 15%;
+  max-height: 15%;        
+  background-color: #D6E9FE;    
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+
+ul {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.titlename {
+  background-color: rgb(71, 71, 71);
+  color: red;
+  min-height: 95px;
+  max-height: 95px;
+  font-size: 5em;
+  padding-top: 0px;
+  font-family:"Comic Sans MS", cursive, sans-serif;
+}
