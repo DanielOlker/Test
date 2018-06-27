@@ -60,7 +60,7 @@
   width:100%;
   min-height: 38rem;
   max-height: 38rem;
-  background-color: #F5CF8E;   
+  background-color: rgb(236, 167, 48);
 }
 
 .footer {
@@ -75,7 +75,7 @@ html, body {
 }
 
 
-ul {
+.Navbar {
     position: sticky;
     top: 0;
     width: 100%;
@@ -86,11 +86,11 @@ ul {
     background-color: #333;
 }
 
-li {
+.Navbutton {
     float: left;
 }
 
-li a {
+.Navbutton a {
     display: block;
     color: white;
     text-align: center;
@@ -99,7 +99,7 @@ li a {
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+.Navbutton a:hover {
     background-color: #111;
 }
 
