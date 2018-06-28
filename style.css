@@ -57,6 +57,7 @@
 .content {
   min-height: 38rem;
   max-height: 38rem;
+  background-color: rgb(248, 228, 112);
 }
 
 .footer {
@@ -103,11 +104,13 @@ li a:hover {
 }
 
 .titlename {
-  background-color: rgb(71, 71, 71);
+  background-image: radial-gradient(circle, #00ffbc, #a0e470, #dac34b, #fb9e58, #ff7e7e);;
   color: red;
   min-height: 95px;
   max-height: 95px;
   font-size: 5em;
   padding-top: 0px;
   font-family:"Comic Sans MS", cursive, sans-serif;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 }
