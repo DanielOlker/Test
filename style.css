@@ -55,12 +55,8 @@
 }
 
 .content {
-  padding-left: 150px;
-  float: left;
-  width:100%;
   min-height: 38rem;
   max-height: 38rem;
-  background-color: rgb(255, 214, 144);
 }
 
 .footer {
