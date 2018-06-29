@@ -116,14 +116,14 @@ li a:hover {
 }
 
 .helloworldtitle {
-  font-family: "Orbitron", sans-;
+  font-family: "Press Start 2P", sans-;
   background-image: none;
   background-color: black;
-  padding-top: 10px;
+  padding-top: 20px;
   color: rgb(62, 253, 62);
   min-height: 95px;
   max-height: 95px;
-  font-size: 5em;
+  font-size: 3em;
 }
 
 .navbar {
@@ -154,4 +154,26 @@ li a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.zoom_image
+{
+  display: block;
+  padding: 10px 10px 10px 10px;
+  position:relative;
+  width:100px;
+  height:80px;
+  left:0px;
+  top:0px;
+  border:1px solid black;
+  -webkit-transition: width 0.3s ease,height 0.3s ease,left 0.3s ease,top 0.3s ease;
+}
+
+.zoom_image:hover
+{
+  width:500px;
+  height:480px;
+  left:-25px;
+  top:-25px;
+  z-index:9999;
 }

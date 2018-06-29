@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" class="w-100">
+    <!-- Style Sheet: Tachyons 4.1.0-->
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+
+<title>Contact</title>
+
+<style>
+
+</style>
+
+<body>
+
+<!-- Top Head to the Page-->
+
+  <div class='titlename tc' >Contact</div>
+  
+<!-- Navigation Bar-->
+
+  <ul class='navbar'>
+    <li><a class='' href="Home.html">Home</a></li>
+    <li><a class='' href="News.html">News</a></li>
+    <li><a class='active' href="Contact.html">Contact</a></li>
+    <li class='' style="float:right"><a href="About.html">About</a></li>
+  </ul>
+
+<!-- Page Contents -->
+
+  <div class='container'>      
+    <div class='page'>
+      <div style='height: 60rem;'>
+          <img id="img1" src="http://sphotos-c.ak.fbcdn.net/hphotos-ak-   snc6/189287_403070459759757_137788631_n.png" alt="" class="zoom_image"/>
+          
+          <script>
+          var image = document.getElementById("img1");
+          document.addEventListener('keydown', doKeyDown, true);
+          
+          function doKeyDown(e) {
+            console.log('!msg!');
+            //====================
+            //  THE W KEY
+            //====================
+            if (e.keyCode == 83) {
+              image.setAttribute('style', '-webkit-transform:scale(4);');
+            }
+              //====================
+            //  THE X KEY
+            //====================
+            if (e.keyCode == 88) {
+              image.setAttribute('style', '-webkit-transform:scale(1);');
+            }
+          }
+          </script>
+        
+      </div>
+    </div>
+  </div>              
+  
+  <div class='footer'>Footer</div>
+</body>
+
+
+</html>
