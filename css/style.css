@@ -156,8 +156,7 @@ li a:hover {
   transform: translate(-50%, -50%);
 }
 
-.zoom_image
-{
+.zoom_image {
   display: block;
   padding: 10px 10px 10px 10px;
   position:relative;
@@ -169,11 +168,17 @@ li a:hover {
   -webkit-transition: width 0.3s ease,height 0.3s ease,left 0.3s ease,top 0.3s ease;
 }
 
-.zoom_image:hover
-{
+.zoom_image:hover {
   width:500px;
   height:480px;
   left:-25px;
   top:-25px;
-  z-index:9999;
+  z-index:0;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
 }
