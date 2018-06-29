@@ -37,7 +37,7 @@
 
 .container {
   overflow: hidden;
-  background-color: rgb(141, 189, 236);
+  background-color: rgb(43, 121, 199);
 }
  
 .menu {
@@ -55,8 +55,8 @@
 }
 
 .content {
-  min-height: 38rem;
-  max-height: 38rem;
+  min-height: 25rem;
+  max-height: 25rem;
   background-color: rgb(248, 228, 112);
 }
 
@@ -69,18 +69,6 @@ html, body {
   height: 100%;
   width: 100%;
 }
-
-
-/*ul {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}*/
 
 li {
     float: left;
@@ -161,11 +149,12 @@ li a:hover {
   padding: 10px 10px 10px 10px;
   position:relative;
   width:100px;
-  height:80px;
+  height:100px;
   left:0px;
   top:0px;
   border:1px solid black;
   -webkit-transition: width 0.3s ease,height 0.3s ease,left 0.3s ease,top 0.3s ease;
+  transition: width 0.3s ease,height 0.3s ease,left 0.3s ease,top 0.3s ease;
 }
 
 .zoom_image:hover {
@@ -180,5 +169,5 @@ li a:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
