@@ -3,37 +3,6 @@
   src: url("../font/MATRIX.ttf") format('truetype')
 }
 
-.bw08 {
-  border-width: 0.1rem; 
-}
-
-.w-15 {
-  width: 15%;
-}
-
-.defaultcolor {
-  color: whitesmoke;
-}
-
-.pb10 {
-  padding-bottom: 25rem;
-}
-
-.colorshiftBlue {
-  color: defaultcolor;
-  transition: color .15s ease-in;
-}
-
-.colorshiftBlue:hover,
-.colorshiftBlue:focus {
-  color: lightblue;
-  transition: color .15s ease-in;
-}
-
-.defaultfont {
-  font-size: 15px;
-}
-
 .page {
   width: 90%;
   margin: 0 auto;
@@ -83,7 +52,7 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-    background-color: #111;
+    background-color: rgb(24, 107, 27);
 }
 
 .active {
@@ -110,6 +79,7 @@ li a:hover {
   min-height: 95px;
   max-height: 95px;
   font-size: 3.5rem;
+  cursor: none;
 }
 
 .navbar {
@@ -129,7 +99,7 @@ li a:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 1000px;
+  height: 800px;
 }
 
 .beemovietitle {
@@ -141,6 +111,7 @@ li a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: help;
 }
 
 .zoom_image {
@@ -177,3 +148,122 @@ li a:hover {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;"
 }
+
+/* 
+Fun Button CSS 
+*/
+
+.button {
+  display: inline-block;
+  position: relative;
+  margin: 1em;
+  padding: 0.67em;
+  border: 2px solid #FFF;
+  overflow: hidden;
+  text-decoration: none;
+  font-size: 2em;
+  outline: none;
+  color: #FFF;
+  background: transparent;
+  font-family: 'raleway', sans-serif;
+  text-align: center;
+}
+
+.button span {
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.button:before,
+.button:after {
+  content: '';
+  position: absolute;
+  top: 0.67em;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: .4s,opacity .6s;
+  -moz-transition: .4s,opacity .6s;
+  -o-transition: .4s,opacity .6s;
+  transition: .4s,opacity .6s;
+}
+
+/* :before */
+
+.button:before {
+  content: attr(data-hover);
+  -webkit-transform: translate(-150%,0);
+  -moz-transform: translate(-150%,0);
+  -ms-transform: translate(-150%,0);
+  -o-transform: translate(-150%,0);
+  transform: translate(-150%,0);
+}
+
+/* :after */
+
+.button:after {
+  content: attr(data-active);
+  -webkit-transform: translate(150%,0);
+  -moz-transform: translate(150%,0);
+  -ms-transform: translate(150%,0);
+  -o-transform: translate(150%,0);
+  transform: translate(150%,0);
+}
+
+/* Span on :hover and :active */
+
+.button:hover span,
+.button:active span {
+  opacity: 0;
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  -ms-transform: scale(0.3);
+  -o-transform: scale(0.3);
+  transform: scale(0.3);
+}
+
+/*  
+  We show :before pseudo-element on :hover 
+  and :after pseudo-element on :active 
+*/
+
+.button:hover:before,
+.button:active:after {
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+  -moz-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  -o-transform: translate(0,0);
+  transform: translate(0,0);
+  -webkit-transition-delay: .4s;
+  -moz-transition-delay: .4s;
+  -o-transition-delay: .4s;
+  transition-delay: .4s;
+}
+
+/* 
+We hide :before pseudo-element on :active
+*/
+
+.button:active:before {
+  -webkit-transform: translate(-150%,0);
+  -moz-transform: translate(-150%,0);
+  -ms-transform: translate(-150%,0);
+  -o-transform: translate(-150%,0);
+  transform: translate(-150%,0);
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+/*
+End of Button CSS
+*/
