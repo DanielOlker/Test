@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Matrix';
+  src: url("../font/MATRIX.ttf") format('truetype')
+}
+
 .bw08 {
   border-width: 0.1rem; 
 }
@@ -37,7 +42,7 @@
 
 .container {
   overflow: hidden;
-  background-color: rgb(43, 121, 199);
+  background: url('http://www.designbolts.com/wp-content/uploads/2012/11/Beautiful-Dark-Seamlesss-background-for-mobile-apps.jpg') repeat center center;
 }
  
 .menu {
@@ -52,12 +57,6 @@
   min-height: 30rem;
   max-height: 30rem;
   background-color: #F09A9D;   
-}
-
-.content {
-  min-height: 25rem;
-  max-height: 25rem;
-  background-color: rgb(248, 228, 112);
 }
 
 .footer {
@@ -104,14 +103,13 @@ li a:hover {
 }
 
 .helloworldtitle {
-  font-family: "Press Start 2P", sans-;
-  background-image: none;
-  background-color: black;
+  font-family: "Matrix", sans-;
+  background: url('https://media1.tenor.com/images/4ac44c8eed874188ed4b2babebe78942/tenor.gif?itemid=11205361') repeat-x center center;
   padding-top: 20px;
   color: rgb(62, 253, 62);
   min-height: 95px;
   max-height: 95px;
-  font-size: 3em;
+  font-size: 3.5rem;
 }
 
 .navbar {
@@ -152,7 +150,6 @@ li a:hover {
   height:100px;
   left:0px;
   top:0px;
-  border:1px solid black;
   -webkit-transition: width 0.3s ease,height 0.3s ease,left 0.3s ease,top 0.3s ease;
   transition: width 0.3s ease,height 0.3s ease,left 0.3s ease,top 0.3s ease;
 }
@@ -170,4 +167,15 @@ li a:hover {
   margin-left: auto;
   margin-right: auto;
   margin-top: 5rem;
+}
+
+.abouttext {
+  background: url('http://www.designbolts.com/wp-content/uploads/2012/11/Beautiful-Dark-Seamlesss-background-for-mobile-apps.jpg') repeat center center;
+  color: whitesmoke;
+  text-align: center;
+  overflow:hidden;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 20pt;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;"
 }
