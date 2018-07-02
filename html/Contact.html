@@ -34,33 +34,6 @@
     <div class='page'>
       <div style='height: 40rem;'>
           <img id="img1" src="http://sphotos-c.ak.fbcdn.net/hphotos-ak-   snc6/189287_403070459759757_137788631_n.png" alt="" class="zoom_image center" style='z-index:0;'/>
-
-          <!-- Konami Code Alert -->
-          <script>
-            const keySequence = [
-            'ArrowUp',
-            'ArrowUp',
-            'ArrowDown',
-            'ArrowDown',
-            'ArrowLeft',
-            'ArrowRight',
-            'ArrowLeft',
-            'ArrowRight',
-            'b',
-            'a',
-            ];
-            
-            let userInput = new Array( keySequence.length );
-
-            window.addEventListener( 'keydown', ( { key } ) => {
-            userInput = [ ...userInput.slice( 1 ), key ];
-
-            if ( keySequence.every( ( v, k ) => v === userInput[ k ] ) ) {
-                alert( 'Yatta!' );
-            }} );
-
-
-          </script>
         
       </div>
     </div>
@@ -69,5 +42,6 @@
   <div class='footer'>Footer</div>
 </body>
 
+<script src='../js/Konami.js'></script>
 
 </html>
