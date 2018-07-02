@@ -10,6 +10,7 @@
 }
 
 .container {
+  margin: auto;
   overflow: hidden;
   background: url('http://www.designbolts.com/wp-content/uploads/2012/11/Beautiful-Dark-Seamlesss-background-for-mobile-apps.jpg') repeat center center;
 }
@@ -153,6 +154,14 @@ li a:hover {
 Fun Button CSS 
 */
 
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 .button {
   display: inline-block;
   position: relative;
@@ -167,6 +176,7 @@ Fun Button CSS
   background: transparent;
   font-family: 'raleway', sans-serif;
   text-align: center;
+  cursor: progress;
 }
 
 .button span {
