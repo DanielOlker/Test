@@ -114,7 +114,7 @@ li a:hover {
 
 .navbar {
   z-index: 2;    
-  position: sticky; top: 0;
+  position: sticky; top: -2px;
   width: 100%;
   list-style-type: none;
   margin: 0;
