@@ -36,6 +36,7 @@
       <div style="background-image: linear-gradient(to bottom, #727272, #636363, #555555, #474747, #3a3a3a); 
                   color: whitesmoke;
                   text-align: center;
+                  height: 600px;
                   font-family: 'Comic Sans MS', cursive, sans-serif;
                   font-size: 20pt;
                   -webkit-text-stroke-width: 1px;
@@ -46,5 +47,15 @@
   
   <div class='footer'>Footer</div>
 </body>
+
+<script>
+  $('.my-sticky-element')
+.on('sticky_kit:bottom', function(e) {
+    $(this).parent().css('position', 'static');
+})
+.on('sticky_kit:unbottom', function(e) {
+    $(this).parent().css('position', 'relative');
+})
+</script>
 
 </html>

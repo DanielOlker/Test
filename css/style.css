@@ -129,6 +129,7 @@ li a:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  height: 1000px;
 }
 
 .beemovietitle {
@@ -144,7 +145,6 @@ li a:hover {
 
 .zoom_image {
   display: block;
-  padding: 10px 10px 10px 10px;
   position:relative;
   width:100px;
   height:100px;
@@ -155,10 +155,8 @@ li a:hover {
 }
 
 .zoom_image:hover {
-  width:500px;
-  height:480px;
-  left:-25px;
-  top:-25px;
+  width:300px;
+  height:300px;
   z-index:0;
 }
 
