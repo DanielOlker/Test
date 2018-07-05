@@ -17,5 +17,5 @@ const keySequence = [
     userInput = [ ...userInput.slice( 1 ), key ];
 
     if ( keySequence.every( ( v, k ) => v === userInput[ k ] ) ) {
-        alert( 'Yatta!' );
+        alert( '                                            Yatta!' );
     }} );
