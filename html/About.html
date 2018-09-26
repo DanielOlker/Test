@@ -30,7 +30,7 @@
   </ul>
 
 <!-- Page Contents -->
-
+<p id="MovieDataTable"></p>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
 <script type='text/javascript'>    
@@ -45,10 +45,13 @@
   function showInfo(data, tabletop) {
     alert('Successfully processed!')
     console.log(data);
+    var MovieData = data;
+    document.getElementById("MovieDataTable").innerHTML = MovieData;
   }
 
   window.addEventListener('DOMContentLoaded', init)
 </script>
+
 
 </body>
 </html>
