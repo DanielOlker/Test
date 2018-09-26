@@ -1,3 +1,4 @@
 {
-    "github.remoteName": "DanielOlker"
+    "github.remoteName": "DanielOlker",
+    "git.autorefresh": false
 }
