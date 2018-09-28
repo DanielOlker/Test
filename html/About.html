@@ -48,19 +48,59 @@ tr:nth-child(even) {
 
 <!-- Page Contents -->
 <table id="myTable">
+  <thead>
+    <!--When a header is clicked, run the sortTable function, with a parameter, 0 for sorting by names, 1 for sorting by country:-->  
+    <th onclick="sortTable(0)">Title</th>
+    <th onclick="sortTable(1)">Critic Score</th>
+    <th onclick="sortTable(2)">Media Type</th>
+    <th onclick="sortTable(3)">Status</th>
+    <th onclick="sortTable(4)">Personal Rating</th>
+  </thead>
+  <tbody>
+    
+    <!-- Example Lines To Prove Sorting Works --> <!--    
     <tr>
-     <!--When a header is clicked, run the sortTable function, with a parameter, 0 for sorting by names, 1 for sorting by country:-->  
-      <th onclick="sortTable(0)">Title</th>
-      <th onclick="sortTable(1)">Critic Score</th>
-      <th onclick="sortTable(2)">Media Type</th>
-      <th onclick="sortTable(3)">Status</th>
-      <th onclick="sortTable(4)">Personal Rating</th>
-    </tr>
-   <tr>
-   </tr>
-   <tr></tr>
+      <td>
+        Band of Brothers
+      </td>
+      <td>
+        9.5
+      </td>
+      <td>
+        TV Show
+      </td>
+      <td>
+        Not Seen
+      </td>
+      <td>
+        N/A
+      </td>
+      </tr>
+    <tr>
+        <td>
+          aBand of Brothers
+        </td>
+        <td>
+          8.5
+        </td>
+        <td>
+          MV Show
+        </td>
+        <td>
+          Mot Seen
+        </td>
+        <td>
+          M/A
+        </td>
+      </tr>
+      
+    -->
+
+  </tbody>
   </table>
   
+  <!-- Script to Sort HTML Table by Columns -->
+
   <script>
   function sortTable(n) {
     var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
@@ -134,7 +174,7 @@ tr:nth-child(even) {
     alert('Successfully processed!')
     console.log(data);
     window.data = data;
-    var MovieData = data;
+    var MovieDataTitle = data.map(({ Title }) => Title);
 
     /*
       iterator data
@@ -142,8 +182,20 @@ tr:nth-child(even) {
       tr > td[title, score, critic,]
       append tr to main tbody via .appendChild
     */
+    var table = document.getElementById("myTable");
+    var tr = document.createElement("tr");
+    data.forEach(function(data) {
+      table.appendChild(tr);
+      tr.appendChild(data.Title);
+      tr.appendChild(data.Critic)
 
-    document.getElementById("MovieDataTable").innerHTML = MovieData;
+    })
+
+
+
+
+
+    document.getElementById("MovieDataTable").innerHTML = MovieDataTitle;
   }
 
   window.addEventListener('DOMContentLoaded', init)
