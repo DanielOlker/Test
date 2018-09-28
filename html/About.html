@@ -118,7 +118,7 @@ tr:nth-child(even) {
   }
   </script>
 
-<!-- <p id="MovieDataTable"></p> -->
+<p id="MovieDataTable"></p>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
 <script type='text/javascript'>    
@@ -133,7 +133,16 @@ tr:nth-child(even) {
   function showInfo(data, tabletop) {
     alert('Successfully processed!')
     console.log(data);
+    window.data = data;
     var MovieData = data;
+
+    /*
+      iterator data
+      for each element in data, create an appropriate dom node that looks like:
+      tr > td[title, score, critic,]
+      append tr to main tbody via .appendChild
+    */
+
     document.getElementById("MovieDataTable").innerHTML = MovieData;
   }
 
